@@ -1,17 +1,26 @@
 import './rational.dart';
 
 void main() {
-  Rational r1 = Rational();
-  Rational r2 = Rational(7);
-  Rational r3 = Rational(5, 3);
-  Rational r4 = Rational(3, -2);
-  Rational r5 = Rational.from(r3);
-  Rational r6 = Rational.fromString('10/7x');
+  final r1 = Rational(1, 3);
+  final r2 = Rational(2, -5);
+  final rationals = [
+    r1,
+    r2,
+    Rational(),
+    Rational(7),
+    Rational(36, 12),
+    Rational(3, -2),
+    Rational.from(r1),
+    Rational.fromString('7/-4'),
+    r2.simplify(),
+    r1 + r2,
+    r1 - r2,
+    r1 * r2,
+    r1 / r2,
+    -r1,
+  ];
 
-  print('r1=$r1');
-  print('r2=$r2');
-  print('r3=$r3');
-  print('r4=$r4');
-  print('r5=$r5');
-  print('r6=$r6');
+  for (int i = 0; i < rationals.length; i++) {
+    print('r${i + 1} = ${rationals[i]}');
+  }
 }
