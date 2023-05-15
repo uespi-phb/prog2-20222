@@ -1,8 +1,8 @@
 import './rational.dart';
 
 void main() {
-  final r1 = Rational(1, 3);
-  final r2 = Rational(2, -5);
+  final r1 = Rational(10);
+  final r2 = Rational(10, -5);
   final rationals = [
     r1,
     r2,
@@ -23,4 +23,11 @@ void main() {
   for (int i = 0; i < rationals.length; i++) {
     print('r${i + 1} = ${rationals[i]}');
   }
+
+  print('r1 > r2: ${r1 > r2}');
+  print('r1 < r2: ${r1 < r2}');
+  print('r1 >= r2: ${r1 >= r2}');
+  print('r1 <= r2: ${r1 <= r2}');
+  print('r1 == r2: ${r1 == 10}');
+  print('r1 != r2: ${r1 != 20}');
 }
