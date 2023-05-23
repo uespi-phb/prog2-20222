@@ -1,33 +1,18 @@
-import 'dart:math';
-
 import './point.dart';
-import './shape.dart';
+import './elipsis.dart';
 
-class Circle extends Shape {
-  final double radius;
-
-  Circle(this.radius)
-      : super(
+class Circle extends Elipsis {
+  Circle(
+    double radius, {
+    Point? center,
+  }) : super(
+          a: radius,
+          b: radius,
+          center: center,
           name: 'Circle',
-          coord: Point(),
         );
 
-  Circle.fromPoint(
-    this.radius,
-    Point center,
-  ) : super(
-          name: 'Circle',
-          coord: center,
-        );
-
-  Circle.fromXY(
-    this.radius,
-    double x,
-    double y,
-  ) : super(
-          name: 'Circle',
-          coord: Point(x, y),
-        );
+  double get radius => a;
 
   @override
   String toString() => 'Circle($radius)';
@@ -37,7 +22,4 @@ class Circle extends Shape {
     super.show();
     print('radius: $radius');
   }
-
-  double area() => pi * radius * radius;
-  double perimeter() => 2 * pi * radius;
 }

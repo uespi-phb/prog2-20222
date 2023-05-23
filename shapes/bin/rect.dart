@@ -9,21 +9,21 @@ class Rect extends Shape {
     String name = 'Rect',
     required this.height,
     required this.width,
+    Point? center,
   }) : super(
           name: name,
-          coord: Point(),
+          center: center,
         );
 
-  Rect.fromPoint({
-    String name = 'Rect',
-    required this.height,
-    required this.width,
-    required Point center,
-  }) : super(
-          name: name,
-          coord: center,
-        );
+  @override
+  void show() {
+    super.show();
+    print('height  : $height');
+    print('width   : $width');
+  }
 
+  @override
   double area() => height * width;
+  @override
   double perimeter() => 2 * (height + width);
 }

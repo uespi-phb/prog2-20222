@@ -1,19 +1,29 @@
 import 'point.dart';
 
-class Shape {
+enum Shapes {
+  circle,
+  triangle,
+  rect,
+  square,
+}
+
+abstract class Shape {
   final String name;
-  final Point coord;
+  final Point center;
 
   Shape({
     required this.name,
-    required this.coord,
-  });
+    Point? center,
+  }) : center = center ?? Point();
 
   @override
   String toString() => 'Shape()';
 
   void show() {
     print('$name:');
-    print('center: (${coord.x},${coord.y})');
+    print('center: (${center.x},${center.y})');
   }
+
+  double area();
+  double perimeter();
 }
