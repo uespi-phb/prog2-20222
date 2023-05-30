@@ -1,8 +1,18 @@
+enum TransactionNature {
+  debit,
+  credit,
+}
+
 enum TransactionType {
-  deposit,
-  withdraw,
-  transfer,
-  payment,
+  deposit(TransactionNature.credit),
+  withdraw(TransactionNature.debit),
+  creditTransfer(TransactionNature.credit),
+  debitTransfer(TransactionNature.debit),
+  payment(TransactionNature.debit);
+
+  const TransactionType(this.nature);
+
+  final TransactionNature nature;
 }
 
 class Transaction {
