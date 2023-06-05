@@ -75,6 +75,7 @@ abstract class Account {
 
     centerPrint('BANCO EXEMPLO  S/A', width);
     centerPrint('EXTRATO  DE  CONTA', width);
+    centerPrint(name, width);
     tabPrint('AG: $agency\tCONTA: $account', tabs);
     print('-' * _tabsWidth);
   }
@@ -84,7 +85,8 @@ abstract class Account {
       final date = dateToDDMM(trans.date);
 
       tabPrint(
-          '$date\tTipo de transação\t${trans.value.toStringAsFixed(2)}', _tabs);
+          '$date\t${trans.type.description}\t${trans.value.toStringAsFixed(2)}',
+          _tabs);
     }
   }
 
@@ -96,7 +98,7 @@ abstract class Account {
     ];
 
     print('-' * _tabsWidth);
-    tabPrint('SALDO:\t$balance', tabs);
+    tabPrint('SALDO:\t${balance.toStringAsFixed(2)}', tabs);
   }
 
   void deposit(double value) {

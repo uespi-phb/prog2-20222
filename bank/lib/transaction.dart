@@ -13,6 +13,20 @@ enum TransactionType {
   const TransactionType(this.nature);
 
   final TransactionNature nature;
+
+  String get description {
+    switch (this) {
+      case TransactionType.deposit:
+        return 'DEPÓSITO';
+      case TransactionType.withdraw:
+        return 'SAQUE';
+      case TransactionType.creditTransfer:
+      case TransactionType.debitTransfer:
+        return 'TRANSFERÊNCIA';
+      case TransactionType.payment:
+        return 'PAGAMENTO';
+    }
+  }
 }
 
 class Transaction {
