@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:bank/account.dart';
 import 'package:bank/current_account.dart';
+import 'package:bank/saving_account.dart';
 import 'package:bank/special_account.dart';
 import 'package:bank/transaction.dart';
 import 'package:faker/faker.dart';
@@ -11,7 +12,7 @@ final Random _rnd = Random();
 void main() {
   List<Account> accounts = [];
 
-  for (int i = 0; i < 4; i++) {
+  for (int i = 0; i < 5; i++) {
     accounts.add(randomAccount());
   }
 
@@ -22,15 +23,31 @@ void main() {
   }
 }
 
+AccountType randomAccountType() {
+  final index = _rnd.nextInt(AccountType.values.length);
+  return AccountType.values[index];
+}
+
+TransactionType randomTransactionType() {
+  final index = _rnd.nextInt(TransactionType.values.length);
+  return TransactionType.values[index];
+}
+
 Account randomAccount() {
   final Account account;
-  final accountType = _rnd.nextInt(2);
   final name = faker.person.name().toUpperCase();
   final agency = _rnd.nextInt(100) + 10;
   final limit = (_rnd.nextInt(501) + 100) * 10.0;
 
-  switch (accountType) {
-    case 1:
+  switch (randomAccountType()) {
+    case AccountType.current:
+      account = CurrentAccount.open(
+        name: name,
+        agency: agency,
+      );
+      break;
+
+    case AccountType.special:
       account = SpecialAccount.open(
         name: name,
         agency: agency,
@@ -38,11 +55,14 @@ Account randomAccount() {
       );
       break;
 
-    default:
-      account = CurrentAccount.open(
+    case AccountType.saving:
+    case AccountType.investment:
+      account = SavingAccount.open(
         name: name,
         agency: agency,
+        interest: 0.05,
       );
+      break;
   }
 
   randomTransactions(account);
@@ -56,8 +76,7 @@ void randomTransactions(Account account) {
   account.deposit((_rnd.nextInt(500000) + 50000) / 100.0);
 
   while (count > 0) {
-    final index = _rnd.nextInt(TransactionType.values.length);
-    final transType = TransactionType.values[index];
+    final transType = randomTransactionType();
     final value = (_rnd.nextInt(50000) + 5000) / 100.0;
 
     if (transType.nature == TransactionNature.credit) {

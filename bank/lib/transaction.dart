@@ -8,7 +8,9 @@ enum TransactionType {
   withdraw(TransactionNature.debit),
   creditTransfer(TransactionNature.credit),
   debitTransfer(TransactionNature.debit),
-  payment(TransactionNature.debit);
+  payment(TransactionNature.debit),
+  creditInterest(TransactionNature.credit),
+  debitInterest(TransactionNature.debit);
 
   const TransactionType(this.nature);
 
@@ -25,6 +27,9 @@ enum TransactionType {
         return 'TRANSFERÊNCIA';
       case TransactionType.payment:
         return 'PAGAMENTO';
+      case TransactionType.creditInterest:
+      case TransactionType.debitInterest:
+        return 'JUROS';
     }
   }
 }

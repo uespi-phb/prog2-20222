@@ -1,5 +1,5 @@
 import './account.dart';
-import 'utils.dart';
+import './utils.dart';
 
 class SpecialAccount extends Account {
   // SpecialAccount({
@@ -26,7 +26,7 @@ class SpecialAccount extends Account {
 
   @override
   void statement() {
-    final width = Account.tabsWidth;
+    final width = Account.statementWidth;
     final tabs = [
       width ~/ 2,
       -(width - (width ~/ 2)),
@@ -35,6 +35,11 @@ class SpecialAccount extends Account {
     super.statement();
 
     tabPrint('LIMITE:\t${limit.toStringAsFixed(2)}', tabs);
-    tabPrint('DISPONÍVEL:\t${balance.toStringAsFixed(2)}', tabs);
+    tabPrint('DISPONÍVEL:\t${availableBalance.toStringAsFixed(2)}', tabs);
+  }
+
+  @override
+  double get availableBalance {
+    return balance + limit;
   }
 }

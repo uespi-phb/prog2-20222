@@ -2,9 +2,16 @@ import './exceptions.dart';
 import './transaction.dart';
 import './utils.dart';
 
+enum AccountType {
+  current,
+  special,
+  saving,
+  investment,
+}
+
 abstract class Account {
   static const _tabs = [6, 20, -10];
-  static int get _tabsWidth => _tabs.fold(0, (sum, tab) => sum + tab.abs());
+  static int get statementWidth => _tabs.fold(0, (sum, tab) => sum + tab.abs());
 
   static final Map<int, int> _accountNumber = {};
 
@@ -60,6 +67,8 @@ abstract class Account {
         (value, transaction) => value + transaction.value,
       );
 
+  double get availableBalance;
+
   void statement() {
     _statementHeader();
     _statementTransactions();
@@ -67,7 +76,7 @@ abstract class Account {
   }
 
   void _statementHeader() {
-    final width = _tabsWidth;
+    final width = statementWidth;
     final tabs = [
       width ~/ 2,
       -(width - (width ~/ 2)),
@@ -77,7 +86,7 @@ abstract class Account {
     centerPrint('EXTRATO  DE  CONTA', width);
     centerPrint(name, width);
     tabPrint('AG: $agency\tCONTA: $account', tabs);
-    print('-' * _tabsWidth);
+    print('-' * statementWidth);
   }
 
   void _statementTransactions() {
@@ -91,13 +100,13 @@ abstract class Account {
   }
 
   void _statementSummary() {
-    final width = _tabsWidth;
+    final width = statementWidth;
     final tabs = [
       width ~/ 2,
       -(width - (width ~/ 2)),
     ];
 
-    print('-' * _tabsWidth);
+    print('-' * statementWidth);
     tabPrint('SALDO:\t${balance.toStringAsFixed(2)}', tabs);
   }
 
