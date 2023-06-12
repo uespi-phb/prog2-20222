@@ -1,3 +1,5 @@
+import 'dart:math';
+
 enum TransactionNature {
   debit,
   credit,
@@ -50,6 +52,18 @@ class Transaction {
     required this.value,
   });
 
+  Transaction.random({
+    required this.type,
+    required this.value,
+  }) : date = _random();
+
   bool get credit => value >= 0.0;
   bool get dedit => value < 0.0;
+
+  static DateTime _lastDateTime = DateTime(2015);
+  static DateTime _random() {
+    final time = Random().nextInt(24) + 1;
+    _lastDateTime = _lastDateTime.add(Duration(hours: time));
+    return _lastDateTime;
+  }
 }

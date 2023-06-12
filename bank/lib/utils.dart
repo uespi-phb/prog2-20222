@@ -32,3 +32,10 @@ centerPrint(String text, int width) {
 String dateToDDMM(DateTime date) {
   return '${date.day ~/ 10}${date.day % 10}/${date.month ~/ 10}${date.month % 10}';
 }
+
+double calculateInterest(
+  double value,
+  double interestPerMonth,
+  int periodInDays,
+) =>
+    (interestPerMonth / 3000.0) * periodInDays * value;

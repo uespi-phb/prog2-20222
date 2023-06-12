@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:bank/account.dart';
 import 'package:bank/current_account.dart';
+import 'package:bank/renevue_account.dart';
 import 'package:bank/saving_account.dart';
 import 'package:bank/special_account.dart';
 import 'package:bank/transaction.dart';
@@ -60,7 +61,6 @@ Account randomAccount() {
       account = SavingAccount.open(
         name: name,
         agency: agency,
-        interest: 0.05,
       );
       break;
   }
@@ -86,5 +86,8 @@ void randomTransactions(Account account) {
     }
 
     count--;
+  }
+  if (account is RevenueAccount) {
+    account.computeInterest();
   }
 }

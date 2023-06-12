@@ -42,7 +42,7 @@ abstract class Account {
   }
 
   void _addTransaction(TransactionType type, double value) {
-    transactions.add(Transaction(
+    transactions.add(Transaction.random(
       type: type,
       value: value,
     ));

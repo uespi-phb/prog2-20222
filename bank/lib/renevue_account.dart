@@ -28,7 +28,7 @@ abstract class RevenueAccount extends Account {
     super.statement();
 
     final value = interest * 100.0;
-    tabPrint('TAXA JUROS (AA):\t${value.toStringAsFixed(2)}%', tabs);
+    tabPrint('TAXA JUROS (AM):\t${value.toStringAsFixed(2)}%', tabs);
   }
 
   void computeInterest();
