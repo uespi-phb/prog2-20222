@@ -39,3 +39,12 @@ double calculateInterest(
   int periodInDays,
 ) =>
     (interestPerMonth / 3000.0) * periodInDays * value;
+
+DateTime firstMomentNextDay(DateTime date) {
+  DateTime nextDay = date.add(Duration(hours: 24));
+  return DateTime(
+    nextDay.year,
+    nextDay.month,
+    nextDay.day,
+  );
+}

@@ -30,16 +30,24 @@ class SavingAccount extends RevenueAccount {
   double get availableBalance => balance;
 
   @override
-  void computeInterest() {
+  void computeInterest([DateTime? date]) {
     double value = 0.0;
     DateTime? lastDate;
+
+    // if(date == null) {
+    //   date = DateTime.now();
+    // }
+    date ??= DateTime.now();
+    date = firstMomentNextDay(date);
 
     for (var trans in transactions.reversed) {
       if (trans.type == TransactionType.creditInterest) {
         break;
       }
-      lastDate = trans.date;
-      value += trans.value;
+      if (trans.date.isBefore(date)) {
+        lastDate = trans.date;
+        value += trans.value;
+      }
     }
     if ((value > 0.0) && (lastDate != null)) {
       final periodInDays = DateTime.now().difference(lastDate).inDays;
@@ -48,4 +56,16 @@ class SavingAccount extends RevenueAccount {
       credit(TransactionType.creditInterest, interestValue);
     }
   }
+}
+
+void sample() {
+  SavingAccount ss = SavingAccount(
+    name: 'Fulano',
+    agency: 100,
+    account: 312312,
+  );
+  DateTime d1 = DateTime.now();
+
+  ss.computeInterest();
+  ss.computeInterest(d1);
 }

@@ -31,5 +31,5 @@ abstract class RevenueAccount extends Account {
     tabPrint('TAXA JUROS (AM):\t${value.toStringAsFixed(2)}%', tabs);
   }
 
-  void computeInterest();
+  void computeInterest([DateTime? date]);
 }
