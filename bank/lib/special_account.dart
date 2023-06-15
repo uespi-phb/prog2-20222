@@ -16,13 +16,13 @@ class SpecialAccount extends Account {
     required super.agency,
     required super.account,
     required this.limit,
-  });
+  }) : super(accountType: AccountType.special);
 
   SpecialAccount.open({
-    required String name,
-    required int agency,
+    required super.name,
+    required super.agency,
     required this.limit,
-  }) : super.open(name: name, agency: agency);
+  }) : super.open(accountType: AccountType.special);
 
   @override
   void statement() {

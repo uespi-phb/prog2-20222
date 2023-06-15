@@ -5,6 +5,7 @@ abstract class RevenueAccount extends Account {
   final double interest;
 
   RevenueAccount({
+    required super.accountType,
     required super.name,
     required super.agency,
     required super.account,
@@ -12,10 +13,11 @@ abstract class RevenueAccount extends Account {
   });
 
   RevenueAccount.open({
-    required String name,
-    required int agency,
+    required super.accountType,
+    required super.name,
+    required super.agency,
     required this.interest,
-  }) : super.open(name: name, agency: agency);
+  }) : super.open();
 
   @override
   void statement() {

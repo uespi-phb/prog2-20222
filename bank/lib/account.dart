@@ -3,10 +3,14 @@ import './transaction.dart';
 import './utils.dart';
 
 enum AccountType {
-  current,
-  special,
-  saving,
-  investment,
+  current('CORRENTE'),
+  special('ESPECIAL'),
+  saving('POUPANÇA'),
+  investment('INVESTIMENTO');
+
+  const AccountType(this.name);
+
+  final String name;
 }
 
 abstract class Account {
@@ -15,6 +19,7 @@ abstract class Account {
 
   static final Map<int, int> _accountNumber = {};
 
+  final AccountType accountType;
   final String name;
   final int agency;
   int account;
@@ -22,12 +27,14 @@ abstract class Account {
   final List<Transaction> transactions = [];
 
   Account({
+    required this.accountType,
     required this.name,
     required this.agency,
     required this.account,
   });
 
   Account.open({
+    required this.accountType,
     required this.name,
     required this.agency,
   }) : account = 0 {
@@ -83,7 +90,7 @@ abstract class Account {
     ];
 
     centerPrint('BANCO EXEMPLO  S/A', width);
-    centerPrint('EXTRATO  DE  CONTA', width);
+    centerPrint('EXTRATO DE CONTA ${accountType.name}', width);
     centerPrint(name, width);
     tabPrint('AG: $agency\tCONTA: $account', tabs);
     print('-' * statementWidth);

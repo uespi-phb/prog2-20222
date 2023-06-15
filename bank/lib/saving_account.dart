@@ -1,3 +1,4 @@
+import 'package:bank/account.dart';
 import 'package:bank/transaction.dart';
 
 import './renevue_account.dart';
@@ -11,6 +12,7 @@ class SavingAccount extends RevenueAccount {
     required int agency,
     required int account,
   }) : super(
+          accountType: AccountType.saving,
           name: name,
           agency: agency,
           account: account,
@@ -21,6 +23,7 @@ class SavingAccount extends RevenueAccount {
     required String name,
     required int agency,
   }) : super.open(
+          accountType: AccountType.saving,
           name: name,
           agency: agency,
           interest: monthlySavingInterest,

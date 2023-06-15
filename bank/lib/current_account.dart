@@ -5,12 +5,14 @@ class CurrentAccount extends Account {
     required super.name,
     required super.agency,
     required super.account,
-  });
+  }) : super(accountType: AccountType.current);
 
   CurrentAccount.open({
-    required String name,
-    required int agency,
-  }) : super.open(name: name, agency: agency);
+    required super.name,
+    required super.agency,
+  }) : super.open(
+          accountType: AccountType.current,
+        );
 
   @override
   double get availableBalance => balance;
