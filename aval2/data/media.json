@@ -1,0 +1,194 @@
+[
+  {
+    "type": "book",
+    "title": "Dom Quixote",
+    "name": "Miguel de Cervantes",
+    "duration": 2157
+  },
+  {
+    "type": "book",
+    "title": "Orgulho e Preconceito",
+    "name": "Jane Austen",
+    "duration": 1080
+  },
+  {
+    "type": "book",
+    "title": "Moby Dick",
+    "name": "Herman Melville",
+    "duration": 1462
+  },
+  {
+    "type": "book",
+    "title": "Crime e Castigo",
+    "name": "Fiódor Dostoiévski",
+    "duration": 1677
+  },
+  {
+    "type": "book",
+    "title": "O Morro dos Ventos Uivantes",
+    "name": "Emily Brontë",
+    "duration": 1040
+  },
+  {
+    "type": "book",
+    "title": "O Processo",
+    "name": "Franz Kafka",
+    "duration": 840
+  },
+  {
+    "type": "book",
+    "title": "As Vinhas da Ira",
+    "name": "John Steinbeck",
+    "duration": 1160
+  },
+  {
+    "type": "book",
+    "title": "O Retrato de Dorian Gray",
+    "name": "Oscar Wilde",
+    "duration": 680
+  },
+  {
+    "type": "book",
+    "title": "Os Miseráveis",
+    "name": "Victor Hugo",
+    "duration": 3750
+  },
+  {
+    "type": "book",
+    "title": "A Odisséia",
+    "name": "Homero",
+    "duration": 1400
+  },
+  {
+    "type": "movie",
+    "title": "Cidadão Kane",
+    "name": "Orson Welles",
+    "duration": 119
+  },
+  {
+    "type": "movie",
+    "title": "Casablanca",
+    "name": "Michael Curtiz",
+    "duration": 102
+  },
+  {
+    "type": "movie",
+    "title": "O Poderoso Chefão",
+    "name": "Francis Ford Coppola",
+    "duration": 175
+  },
+  {
+    "type": "movie",
+    "title": "Laranja Mecânica",
+    "name": "Stanley Kubrick",
+    "duration": 136
+  },
+  {
+    "type": "movie",
+    "title": "Lawrence da Arábia",
+    "name": "David Lean",
+    "duration": 216
+  },
+  {
+    "type": "movie",
+    "title": "2001: Uma Odisseia no Espaço",
+    "name": "Stanley Kubrick",
+    "duration": 149
+  },
+  {
+    "type": "movie",
+    "title": "Psicose",
+    "name": "Alfred Hitchcock",
+    "duration": 109
+  },
+  {
+    "type": "movie",
+    "title": "O Iluminado",
+    "name": "Stanley Kubrick",
+    "duration": 146
+  },
+  {
+    "type": "movie",
+    "title": "O Senhor dos Anéis",
+    "name": "Peter Jackson",
+    "duration": 201
+  },
+  {
+    "type": "movie",
+    "title": "Cães de Aluguel",
+    "name": "Quentin Tarantino",
+    "duration": 99
+  },
+  {
+    "type": "movie",
+    "title": "Pulp Fiction",
+    "name": "Quentin Tarantino",
+    "duration": 154
+  },
+  {
+    "type": "movie",
+    "title": "Apocalypse Now",
+    "name": "Francis Ford Coppola",
+    "duration": 153
+  },
+  {
+    "type": "music",
+    "title": "Like a Rolling Stone",
+    "name": "Bob Dylan",
+    "duration": 6
+  },
+  {
+    "type": "music",
+    "title": "Bohemian Rhapsody",
+    "name": "Queen",
+    "duration": 5
+  },
+  {
+    "type": "music",
+    "title": "Smells Like Teen Spirit",
+    "name": "Nirvana",
+    "duration": 5
+  },
+  {
+    "type": "music",
+    "title": "Imagine",
+    "name": "John Lennon",
+    "duration": 3
+  },
+  {
+    "type": "music",
+    "title": "Sweet Child o' Mine",
+    "name": "Guns N' Roses",
+    "duration": 5
+  },
+  {
+    "type": "music",
+    "title": "Like a Prayer",
+    "name": "Madonna",
+    "duration": 5
+  },
+  {
+    "type": "music",
+    "title": "Thriller",
+    "name": "Michael Jackson",
+    "duration": 5
+  },
+  {
+    "type": "music",
+    "title": "Every Breath You Take",
+    "name": "The Police",
+    "duration": 4
+  },
+  {
+    "type": "music",
+    "title": "I Want to Hold Your Hand",
+    "name": "The Beatles",
+    "duration": 2
+  },
+  {
+    "type": "music",
+    "title": "Let It Be",
+    "name": "The Beatles",
+    "duration": 4
+  }
+]

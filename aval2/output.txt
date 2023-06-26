@@ -1,0 +1,88 @@
+#### FILMES
+
+TIPO    TÍTULO                        NOME                     DURAÇÃO(MIN)
+filme   Cidadão Kane                  Orson Welles                      119
+filme   Casablanca                    Michael Curtiz                    102
+filme   O Poderoso Chefão             Francis Ford Coppola              175
+filme   Laranja Mecânica              Stanley Kubrick                   136
+filme   Lawrence da Arábia            David Lean                        216
+filme   2001: Uma Odisseia no Espaço  Stanley Kubrick                   149
+filme   Psicose                       Alfred Hitchcock                  109
+filme   O Iluminado                   Stanley Kubrick                   146
+filme   O Senhor dos Anéis            Peter Jackson                     201
+filme   Cães de Aluguel               Quentin Tarantino                  99
+filme   Pulp Fiction                  Quentin Tarantino                 154
+filme   Apocalypse Now                Francis Ford Coppola              153
+DURAÇÂO TOTAL: 1759 min
+
+#### LIVROS
+
+TIPO    TÍTULO                        NOME                     DURAÇÃO(MIN)
+filme   Cidadão Kane                  Orson Welles                      119
+filme   Casablanca                    Michael Curtiz                    102
+filme   O Poderoso Chefão             Francis Ford Coppola              175
+filme   Laranja Mecânica              Stanley Kubrick                   136
+filme   Lawrence da Arábia            David Lean                        216
+filme   2001: Uma Odisseia no Espaço  Stanley Kubrick                   149
+filme   Psicose                       Alfred Hitchcock                  109
+filme   O Iluminado                   Stanley Kubrick                   146
+filme   O Senhor dos Anéis            Peter Jackson                     201
+filme   Cães de Aluguel               Quentin Tarantino                  99
+filme   Pulp Fiction                  Quentin Tarantino                 154
+filme   Apocalypse Now                Francis Ford Coppola              153
+DURAÇÂO TOTAL: 15246 min
+
+#### MÙSICAS
+
+TIPO    TÍTULO                        NOME                     DURAÇÃO(MIN)
+filme   Cidadão Kane                  Orson Welles                      119
+filme   Casablanca                    Michael Curtiz                    102
+filme   O Poderoso Chefão             Francis Ford Coppola              175
+filme   Laranja Mecânica              Stanley Kubrick                   136
+filme   Lawrence da Arábia            David Lean                        216
+filme   2001: Uma Odisseia no Espaço  Stanley Kubrick                   149
+filme   Psicose                       Alfred Hitchcock                  109
+filme   O Iluminado                   Stanley Kubrick                   146
+filme   O Senhor dos Anéis            Peter Jackson                     201
+filme   Cães de Aluguel               Quentin Tarantino                  99
+filme   Pulp Fiction                  Quentin Tarantino                 154
+filme   Apocalypse Now                Francis Ford Coppola              153
+DURAÇÂO TOTAL: 44 min
+
+#### TODAS AS MÍDIAS
+
+TIPO    TÍTULO                        NOME                     DURAÇÃO(MIN)
+livro   Dom Quixote                   Miguel de Cervantes              2157
+livro   Orgulho e Preconceito         Jane Austen                      1080
+livro   Moby Dick                     Herman Melville                  1462
+livro   Crime e Castigo               Fiódor Dostoiévski               1677
+livro   O Morro dos Ventos Uivantes   Emily Brontë                     1040
+livro   O Processo                    Franz Kafka                       840
+livro   As Vinhas da Ira              John Steinbeck                   1160
+livro   O Retrato de Dorian Gray      Oscar Wilde                       680
+livro   Os Miseráveis                 Victor Hugo                      3750
+livro   A Odisséia                    Homero                           1400
+filme   Cidadão Kane                  Orson Welles                      119
+filme   Casablanca                    Michael Curtiz                    102
+filme   O Poderoso Chefão             Francis Ford Coppola              175
+filme   Laranja Mecânica              Stanley Kubrick                   136
+filme   Lawrence da Arábia            David Lean                        216
+filme   2001: Uma Odisseia no Espaço  Stanley Kubrick                   149
+filme   Psicose                       Alfred Hitchcock                  109
+filme   O Iluminado                   Stanley Kubrick                   146
+filme   O Senhor dos Anéis            Peter Jackson                     201
+filme   Cães de Aluguel               Quentin Tarantino                  99
+filme   Pulp Fiction                  Quentin Tarantino                 154
+filme   Apocalypse Now                Francis Ford Coppola              153
+música  Like a Rolling Stone          Bob Dylan                           6
+música  Bohemian Rhapsody             Queen                               5
+música  Smells Like Teen Spirit       Nirvana                             5
+música  Imagine                       John Lennon                         3
+música  Sweet Child o' Mine           Guns N' Roses                       5
+música  Like a Prayer                 Madonna                             5
+música  Thriller                      Michael Jackson                     5
+música  Every Breath You Take         The Police                          4
+música  I Want to Hold Your Hand      The Beatles                         2
+música  Let It Be                     The Beatles                         4
+DURAÇÂO TOTAL: 17049 min
+
