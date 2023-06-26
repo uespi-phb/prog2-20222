@@ -20,12 +20,12 @@ void main() {
 
   print('#### LIVROS\n');
   totalDuration = lib.totalMediaDuration(MediaType.book);
-  lib.listMedia(MediaType.movie);
+  lib.listMedia(MediaType.book);
   print('DURAÇÂO TOTAL: $totalDuration min\n');
 
   print('#### MÙSICAS\n');
   totalDuration = lib.totalMediaDuration(MediaType.music);
-  lib.listMedia(MediaType.movie);
+  lib.listMedia(MediaType.music);
   print('DURAÇÂO TOTAL: $totalDuration min\n');
 
   print('#### TODAS AS MÍDIAS\n');
