@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:bank/account.dart';
 import 'package:bank/current_account.dart';
 import 'package:bank/renevue_account.dart';
+import 'package:bank/investment_account.dart';
 import 'package:bank/saving_account.dart';
 import 'package:bank/special_account.dart';
 import 'package:bank/transaction.dart';
@@ -39,6 +40,7 @@ Account randomAccount() {
   final name = faker.person.name().toUpperCase();
   final agency = _rnd.nextInt(100) + 10;
   final limit = (_rnd.nextInt(501) + 100) * 10.0;
+  final interest = (_rnd.nextInt(50) + 1) / 1000.0;
 
   switch (randomAccountType()) {
     case AccountType.current:
@@ -57,10 +59,17 @@ Account randomAccount() {
       break;
 
     case AccountType.saving:
-    case AccountType.investment:
       account = SavingAccount.open(
         name: name,
         agency: agency,
+      );
+      break;
+
+    case AccountType.investment:
+      account = InvestmentAccount.open(
+        name: name,
+        agency: agency,
+        interest: interest,
       );
       break;
   }
