@@ -1,0 +1,156 @@
+SYMBOL NAME         LATIN        WEIGHT
+Ac     Actínio      Actinium         89
+Ag     Prata        Argentum         47
+Al     Alumínio     Alumen           13
+Am     Amerício     Americium        95
+Ar     Argônio      Argon            18
+As     Arsénio      Arsenicum        33
+At     Ástato       Astatum          85
+Au     Ouro         Aurum            79
+B      Boro         Borium            5
+Ba     Bário        Barium           56
+Be     Berílio      Beryllium         4
+Bh     Bóhrio       Bohrium         107
+Bi     Bismuto      Bismuthum        83
+Bk     Berquélio    Berkelium        97
+Br     Bromo        Bromum           35
+C      Carbono      Carbonium         6
+Ca     Cálcio       Calcium          20
+Cd     Cádmio       Cadmium          48
+Ce     Cério        Cerium           58
+Cf     Califórnio   Californium      98
+Cl     Cloro        Clorum           17
+Cm     Cúrio        Curium           96
+Cn     Copernício   Copernicium     112
+Co     Cobalto      Cobaltum         27
+Cr     Cromo        Chromium         24
+Cs     Césio        Caesium          55
+Cu     Cobre        Cuprum           29
+Db     Dúbnio       Dubnium         105
+Ds     Darmstácio   Darmstadtium    110
+Dy     Disprósio    Dysprosium       66
+Er     Érbio        Erbium           68
+Es     Einsténio    Einsteinium      99
+Eu     Európio      Europium         63
+F      Flúor        Fluorum           9
+Fe     Ferro        Ferrum           26
+Fl     Fleróvio     Flerovium       114
+Fm     Férmio       Fermium         100
+Fr     Frâncio      Francium         87
+Ga     Gálio        Galium           31
+Gd     Gadolínio    Gadolinium       64
+Ge     Germânio     Germanium        32
+H      Hidrogênio   Hydrogenium       1
+He     Hélio        Helium            2
+Hf     Háfnio       Hafnium          72
+Hg     Mercúrio     Hydrargyrum      80
+Ho     Hólmio       Holmium          67
+Hs     Hássio       Hassium         108
+I      Iodo         Iodum            53
+In     Índio        Indium           49
+Ir     Irídio       Iridium          77
+K      Potássio     Kalium           19
+Kr     Criptônio    Krypton          36
+La     Lantânio     Lanthanum        57
+Li     Lítio        Lithium           3
+Lr     Laurêncio    Lawrencium      103
+Lu     Lutécio      Lutetium         71
+Lv     Livermório   Livermorium     116
+Mc     Moscóvio     Moscovium       115
+Md     Mendelévio   Mendelevium     101
+Mg     Magnésio     Magnesium        12
+Mn     Manganês     Manganum         25
+Mo     Molibdénio   Molybdenum       42
+Mt     Meitnério    Meitnerium      109
+N      Nitrogênio   Nitrogenium       7
+Na     Sódio        Natrium          11
+Nb     Nióbio       Niobium          41
+Nd     Neodímio     Neodymium        60
+Ne     Neônio       Neon             10
+Nh     Nipônio      Nihonium        113
+Ni     Níquel       Niccolum         28
+No     Nobélio      Nobelium        102
+Np     Ne(p)túnio   Neptunium        93
+O      Oxigênio     Oxygenium         8
+Og     Oganésson    Oganesson       118
+Os     Ósmio        Osmium           76
+P      Fósforo      Phosphorus       15
+Pa     Protactínio  Protactinium     91
+Pb     Chumbo       Plumbum          82
+Pd     Paládio      Palladium        46
+Pm     Promécio     Promethium       61
+Po     Polônio      Polonium         84
+Pr     Praseodímio  Praseodymium     59
+Pt     Platina      Platinum         78
+Pu     Plutônio     Plutonium        94
+Ra     Rádio        Radium           88
+Rb     Rubídio      Rubidium         37
+Re     Rênio        Rhenium          75
+Rf     Rutherfórdio Rhuterfordium   104
+Rg     Roentgénio   Roentgenium     111
+Rh     Ródio        Rhodium          45
+Rn     Rádon        Radon            86
+Ru     Rutênio      Ruthenium        44
+S      Enxofre      Sulphur          16
+Sb     Antimônio    Stibium          51
+Sc     Escândio     Scandium         21
+Se     Selénio      Selenium         34
+Sg     Seabórgio    Seaborgium      106
+Si     Silício      Silicium         14
+Sm     Samário      Samarium         62
+Sn     Estanho      Stannum          50
+Sr     Estrôncio    Strontium        38
+Ta     Tântalo      Tantalum         73
+Tb     Térbio       Terbium          65
+Tc     Tecnécio     Technetium       43
+Te     Telúrio      Tellurium        52
+Th     Tório        Thorium          90
+Ti     Titânio      Titanium         22
+Tl     Tálio        Thallium         81
+Tm     Túlio        Thulium          69
+Ts     Tenesso      Tennessine      117
+U      Urânio       Uranium          92
+V      Vanádio      Vanadium         23
+W      Tungstênio   Wolframium       74
+Xe     Xenônio      Xenon            54
+Y      Ítrio        Yttrium          39
+Yb     Itérbio      Ytterbium        70
+Zn     Zinco        Zincum           30
+Zr     Zircônio     Zirconium        40
+----------------------------------------
+Fórmula: C6H12O6
+Peso   : 96
+Fórmula: CH3COOH
+Peso   : 32
+----------------------------------------
+FORMULA        WEIGHT
+F                   9
+Br                 35
+O2                 16
+Br2                70
+H2O                10
+NaCl               28
+H2SO4              50
+NaHCO3             42
+C6H12O6            96
+C2H3O2NH4          42
+C12H22N2O4        140
+C4H4O6KNa4H2O     149
+----------------------------------------
+FORMULA        WEIGHT
+F                   9
+H2O                10
+O2                 16
+NaCl               28
+Br                 35
+NaHCO3             42
+C2H3O2NH4          42
+H2SO4              50
+Br2                70
+C6H12O6            96
+C12H22N2O4        140
+C4H4O6KNa4H2O     149
+----------------------------------------
+Fórmula inválida: "" (Fórmula vazia)
+Fórmula inválida: "H2O1" (Fórmula inválida da água: "1")
+Fórmula inválida: "G2H5" (Fórmula com elemento inexistente: "G")
